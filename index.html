@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estúdio ACAN — Arquitetura</title>
+  <meta name="description" content="Estúdio ACAN — escritório de arquitetura fundado por Anna Bernardo e Carolina Miloski. Projetos residenciais, interiores, paisagismo e mais.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" href="imag/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="imag/2411_LOGO_BASICA_SEMFUNDO_LETRA_BEGE_Prancheta.png" alt="Estúdio ACAN" height="40">
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#projetos" class="header__nav-link">Projetos</a></li>
+          <li><a href="#sobre" class="header__nav-link">Sobre</a></li>
+          <li><a href="#servicos" class="header__nav-link">Serviços</a></li>
+          <li><a href="#contato" class="header__nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger" id="burger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__slides">
+      <a href="projetos/casa-com-piscina.html" class="hero__slide active" style="background-image: url('imag/IMG_9679.JPEG');"></a>
+      <a href="projetos/apartamento-terracota.html" class="hero__slide" style="background-image: url('imag/IMG_2823.PNG');"></a>
+      <a href="projetos/casa-a-frame.html" class="hero__slide" style="background-image: url('imag/IMG_0001.JPEG');"></a>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">ARQUITETURA E DESIGN</h1>
+    </div>
+    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Anterior">
+      <img src="imag/arrow.png" alt="anterior">
+    </button>
+    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Próxima">
+      <img src="imag/arrow.png" alt="próxima">
+    </button>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="portfolio" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <div class="portfolio__grid">
+
+        <a href="projetos/apartamento-terracota.html" class="portfolio__card">
+          <div class="portfolio__card-img">
+            <img src="imag/IMG_2823.PNG" alt="Apartamento Terracota">
+          </div>
+          <div class="portfolio__card-info">
+            <h3 class="portfolio__card-name">Apartamento Terracota</h3>
+            <p class="portfolio__card-cat">Residencial · Interiores</p>
+          </div>
+        </a>
+
+        <a href="projetos/casa-com-piscina.html" class="portfolio__card">
+          <div class="portfolio__card-img">
+            <img src="imag/IMG_9679.JPEG" alt="Casa com Piscina">
+          </div>
+          <div class="portfolio__card-info">
+            <h3 class="portfolio__card-name">Casa com Piscina</h3>
+            <p class="portfolio__card-cat">Residencial · Paisagismo</p>
+          </div>
+        </a>
+
+        <a href="projetos/casa-a-frame.html" class="portfolio__card">
+          <div class="portfolio__card-img">
+            <img src="imag/IMG_0001.JPEG" alt="Casa A-Frame">
+          </div>
+          <div class="portfolio__card-info">
+            <h3 class="portfolio__card-name">Casa A-Frame</h3>
+            <p class="portfolio__card-cat">Residencial</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__photo">
+          <img src="imag/IMG_5787.jpeg" alt="Anna Bernardo e Carolina Miloski — fundadoras do Estúdio ACAN">
+        </div>
+        <div class="about__text">
+          <h2 class="section-title">Sobre</h2>
+          <p class="about__tagline">
+            Arquitetura que acontece na convergência entre a intenção e o contexto da obra
+          </p>
+          <p class="about__body">
+            O Estúdio ACAN entende a arquitetura como uma ferramenta transformadora que eleva
+            a qualidade de vida e o bem-estar. Com uma abordagem autêntica e inovadora, buscamos
+            soluções que respeitem o contexto, valorizando a materialidade, a eficiência dos
+            espaços e as experiências proporcionadas.
+          </p>
+          <ul class="about__team">
+            <li>
+              <strong>Anna Bernardo</strong>
+              <span>Formada em Arquitetura e Urbanismo pela UERJ</span>
+              <span>Dedica-se ao estudo e à prática de diferentes técnicas construtivas</span>
+            </li>
+            <li>
+              <strong>Carolina Miloski</strong>
+              <span>Formada em Arquitetura e Urbanismo pela UERJ</span>
+              <span>Pós-graduada em Design de Interiores pela PUC/RS</span>
+              <span>Pesquisa e explora soluções criativas nos projetos</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <h2 class="section-title">Serviços</h2>
+      <ul class="services__grid">
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Residencial</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Comercial</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Expografia</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Institucional</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Interiores</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Consultoria</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Mobiliário</span>
+        </li>
+        <li class="services__item">
+          <span class="services__icon">⬡</span>
+          <span class="services__name">Paisagismo</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <h2 class="section-title contact__title">Contato</h2>
+      <div class="contact__inner">
+
+        <!-- LADO ESQUERDO: links -->
+        <div class="contact__info">
+          <p class="contact__cta">
+            Tem um projeto em mente? Fale com a gente pelo WhatsApp clicando no botão abaixo
+            ou envie uma solicitação pelo formulário ao lado — respondemos rápido e adoramos
+            ouvir mais sobre seus sonhos.
+          </p>
+          <a href="https://wa.me/5524981517580?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20projeto%20de%20arquitetura." target="_blank" rel="noopener" class="contact__whatsapp-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            Pedir orçamento pelo WhatsApp
+          </a>
+          <ul class="contact__list">
+            <li>
+              <a href="https://www.instagram.com/estudioacan" target="_blank" rel="noopener" class="contact__link">
+                <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                </svg>
+                @estudioacan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@estudioacan" target="_blank" rel="noopener" class="contact__link">
+                <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+                </svg>
+                @estudioacan
+              </a>
+            </li>
+            <li>
+              <a href="mailto:estudioacan@gmail.com" class="contact__link">
+                <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                estudioacan@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- LADO DIREITO: formulário -->
+        <form class="contact__form" action="mailto:estudioacan@gmail.com" method="post" enctype="text/plain">
+          <div class="contact__form-group">
+            <label class="contact__form-label" for="nome">Nome</label>
+            <input class="contact__form-input" type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__form-label" for="email">E-mail</label>
+            <input class="contact__form-input" type="email" id="email" name="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="contact__form-group">
+            <label class="contact__form-label" for="mensagem">Mensagem</label>
+            <textarea class="contact__form-input contact__form-textarea" id="mensagem" name="mensagem" placeholder="Conte sobre seu projeto..." required></textarea>
+          </div>
+          <button class="contact__form-btn" type="submit">Enviar mensagem</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Estúdio ACAN</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">×</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">&#8592;</button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Próxima">&#8594;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
