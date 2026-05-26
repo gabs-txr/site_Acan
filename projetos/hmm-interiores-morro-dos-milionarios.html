@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMM - Interiores residencial Morro dos Milionários — Estúdio ACAN</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" href="../imag/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <img src="../imag/2411_LOGO_BASICA_SEMFUNDO_LETRA_BEGE_Prancheta.png" alt="Estúdio ACAN" height="40">
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="../index.html#projetos" class="header__nav-link">Projetos</a></li>
+          <li><a href="../index.html#sobre" class="header__nav-link">Sobre</a></li>
+          <li><a href="../index.html#servicos" class="header__nav-link">Serviços</a></li>
+          <li><a href="../index.html#contato" class="header__nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger" id="burger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="project-hero__bg" style="background-image: url('../imag/projetos/CAPAS/HMM.PNG')"></div>
+    <div class="project-hero__overlay"></div>
+    <div class="project-hero__info">
+      <h1 class="project-hero__name">HMM - Interiores residencial Morro dos Milionários</h1>
+      <p class="project-hero__cat">Residencial · Interiores</p>
+      <a href="../index.html#projetos" class="project-hero__back">← Voltar para projetos</a>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery__grid">
+        <div class="gallery__item"><img src="../imag/projetos/HMM_Interiores residencial_Morro dos Milionários/IMG_8918.PNG" alt="Ambiente 1"></div>
+        <div class="gallery__item"><img src="../imag/projetos/HMM_Interiores residencial_Morro dos Milionários/IMG_0156.PNG" alt="Ambiente 2"></div>
+        <div class="gallery__item"><img src="../imag/projetos/HMM_Interiores residencial_Morro dos Milionários/IMG_0007.PNG" alt="Ambiente 3"></div>
+        <div class="gallery__item"><img src="../imag/projetos/HMM_Interiores residencial_Morro dos Milionários/IMG_1339.PNG" alt="Ambiente 4"></div>
+        <div class="gallery__item"><img src="../imag/projetos/HMM_Interiores residencial_Morro dos Milionários/BANHEIRO 2.png" alt="Banheiro"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav">
+    <div class="container">
+      <div class="project-nav__inner">
+        <a href="dhm-cozinha-mosela.html" class="project-nav__prev">← DHM - Cozinha Mosela</a>
+        <a href="../index.html#projetos" class="project-nav__all">Ver todos</a>
+        <a href="jgf-chale-areal.html" class="project-nav__next">JGF - Chalé Areal →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">×</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">&#8592;</button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Próxima">&#8594;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

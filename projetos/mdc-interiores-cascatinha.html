@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDC - Interiores residencial Cascatinha — Estúdio ACAN</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" href="../imag/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <img src="../imag/2411_LOGO_BASICA_SEMFUNDO_LETRA_BEGE_Prancheta.png" alt="Estúdio ACAN" height="40">
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="../index.html#projetos" class="header__nav-link">Projetos</a></li>
+          <li><a href="../index.html#sobre" class="header__nav-link">Sobre</a></li>
+          <li><a href="../index.html#servicos" class="header__nav-link">Serviços</a></li>
+          <li><a href="../index.html#contato" class="header__nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger" id="burger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO DO PROJETO -->
+  <section class="project-hero">
+    <div class="project-hero__bg" style="background-image: url('../imag/projetos/CAPAS/MDC.png')"></div>
+    <div class="project-hero__overlay"></div>
+    <div class="project-hero__info">
+      <h1 class="project-hero__name">MDC - Interiores residencial Cascatinha</h1>
+      <p class="project-hero__cat">Residencial · Interiores</p>
+      <a href="../index.html#projetos" class="project-hero__back">← Voltar para projetos</a>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery__grid">
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/COZINHA E ESTAR H.png" alt="Cozinha e Estar"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/COZINHA 1 H.png" alt="Cozinha 1"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/COZINHA 2 H.png" alt="Cozinha 2"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/COZINHA BANCADA ESTANTE V.png" alt="Cozinha bancada estante"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/ESTAR 1 H CORRIGIDA.jpeg" alt="Estar 1"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/ESTAR 1 V.png" alt="Estar vertical"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/SALA DE JANTAR 3.png" alt="Sala de Jantar"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/VARANDA 1 V.png" alt="Varanda"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/QUARTO DETALHE CAMA.png" alt="Quarto"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/VIDRO CANELADO V.png" alt="Vidro canelado"></div>
+        <div class="gallery__item"><img src="../imag/projetos/MDC_Interiores residencial_Cascatinha/BANHEIRO.png" alt="Banheiro"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <nav class="project-nav">
+    <div class="container">
+      <div class="project-nav__inner">
+        <a href="mnc-area-externa-caxambu.html" class="project-nav__prev">← MNC - Área externa Caxambu</a>
+        <a href="../index.html#projetos" class="project-nav__all">Ver todos</a>
+        <a href="dhm-cozinha-mosela.html" class="project-nav__next">DHM - Cozinha Mosela →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">×</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">&#8592;</button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Próxima">&#8594;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
