@@ -586,7 +586,7 @@ section {
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
@@ -613,12 +613,30 @@ section {
 
 .services__name {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--black);
   text-align: center;
+}
+
+.services__desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: var(--black);
+  text-align: center;
+  opacity: 0.75;
+}
+
+.services__slider {
+  position: relative;
+}
+
+.services__scroll-btn {
+  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -629,19 +647,107 @@ section {
 
 @media (max-width: 767px) {
   .services__grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 1rem;
+    padding: 0 0 1.5rem;
+    grid-template-columns: unset;
+    scrollbar-width: none;
+  }
+
+  .services__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .services__scroll-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--terracota);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s;
+  }
+
+  .services__scroll-btn--next {
+    right: -1rem;
+  }
+
+  .services__scroll-btn--prev {
+    left: -1rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .services__scroll-btn:active {
+    opacity: 0.7;
   }
 
   .services__item {
+    flex: 0 0 75vw;
+    scroll-snap-align: start;
     min-width: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .services__name {
     font-size: 1.1rem;
     letter-spacing: 0.08em;
   }
+}
+
+/* ============================================================
+   CATEGORIAS
+   ============================================================ */
+.categories {
+  margin-top: 6rem;
+}
+
+.categories__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+}
+
+.categories__item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--black);
+}
+
+.categories__item::after {
+  content: ' · ';
+  color: var(--terracota);
+  margin: 0 0.6rem;
+}
+
+.categories__item:last-child::after {
+  content: '';
 }
 
 /* ============================================================

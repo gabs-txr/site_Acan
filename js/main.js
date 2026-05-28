@@ -144,3 +144,37 @@ function initGallery() {
 }
 
 initGallery();
+
+// ============================================================
+// SERVIÇOS — SCROLL COM SETA
+// ============================================================
+const servicesGrid = document.querySelector('.services__grid');
+const servicesNext = document.getElementById('servicesNext');
+const servicesPrev = document.getElementById('servicesPrev');
+
+if (servicesGrid && servicesNext && servicesPrev) {
+  function getCardStep() {
+    const card = servicesGrid.querySelector('.services__item');
+    const gap = parseInt(getComputedStyle(servicesGrid).gap) || 16;
+    return card.offsetWidth + gap;
+  }
+
+  servicesNext.addEventListener('click', () => {
+    servicesGrid.scrollBy({ left: getCardStep(), behavior: 'smooth' });
+  });
+
+  servicesPrev.addEventListener('click', () => {
+    servicesGrid.scrollBy({ left: -getCardStep(), behavior: 'smooth' });
+  });
+
+  servicesGrid.addEventListener('scroll', () => {
+    const atStart = servicesGrid.scrollLeft <= 4;
+    const atEnd = servicesGrid.scrollLeft + servicesGrid.clientWidth >= servicesGrid.scrollWidth - 4;
+
+    servicesPrev.style.opacity = atStart ? '0' : '1';
+    servicesPrev.style.pointerEvents = atStart ? 'none' : 'auto';
+
+    servicesNext.style.opacity = atEnd ? '0' : '1';
+    servicesNext.style.pointerEvents = atEnd ? 'none' : 'auto';
+  });
+}
